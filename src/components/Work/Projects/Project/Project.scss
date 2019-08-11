@@ -1,0 +1,99 @@
+@import '../../../../variables.scss';
+
+.project {
+    overflow: hidden;
+    background-color: $color-primary-dark;
+    position: relative;
+    box-shadow: 0 1rem 2rem rgba($color-primary,0.2);
+
+    border-radius: 3px;
+
+    &:hover {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.45);
+
+
+    }
+
+    &__name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s; /* i want only the opacity to be transitioned but i want the visibility to apply immediately */ 
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.2);
+        transition: all 0.5s;
+        opacity: 0.6;
+        &:not(:hover) {
+            filter: blur(5px);
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            opacity: 1;
+            position: unset;
+        }
+    }
+
+    &__info {
+        background: #1e1e1ee6;
+        color: #f1c40f;
+        line-height: 1.1;
+        position: absolute;
+        font-size: 3rem;
+        bottom: -50rem;
+        opacity: 0;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    &__icons {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        font-size: 5rem;
+        padding: 0.3rem;
+        background-color: rgba(255,255,255,0.65);
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        transition: 0.3s;
+
+        a {
+            line-height: 0.5;
+        }
+    }
+
+    &__image:hover + &__name {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    
+    &__image:hover ~ &__info,
+    &__info:hover {
+        opacity: 1;
+        bottom: 0;
+    }
+    
+    &__image:hover ~ &__icons,
+    &__icons:hover {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+.contact {
+
+    &__icons {
+        font-size: 5rem;
+        display: inline-block;
+        margin: 5px;
+        transition: 0.3s;
+        color: #1e1e1ee6;
+
+        &:hover {
+            color: #f1c40f;
+        }
+    }
+
+    &__github {
+        animation: animate-contact 1.5s; 
+    }
+
+    &__linkedin {
+        animation: animate-contact 0.5s; 
+    }
+    
+    &__facebook {
+        animation: animate-contact 1s; 
+    }
+    
+
+    &__phone-icon {
+        animation: animate-contact 2.5s; 
+    }
+    
+    &__mail-icon {
+        animation: animate-contact 2s; 
+    }
+
+    &__phone-icon:hover,
+    &__mail-icon:hover {
+        transform: rotateZ(15deg);
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.phone-shown ,
+.mail-shown {
+    color: #f1c40f;
+}
+
+
+
+
+@keyframes animate-contact {
+    from {
+        transform: translateX(-50rem);
+    }
+
+    60% {
+        transform: translateX(2rem)
+    }
+    to {
+        transform: translateX(0);
+    }
+}

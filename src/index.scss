@@ -1,0 +1,140 @@
+@import './variables.scss';
+
+html {
+    font-size: 62.5%;   // 10px/16px = 62.5%;
+    box-sizing: border-box;
+
+    // @media only screen and (max-width: $bp-xl) {
+    //     font-size: 56.25%;  // 9/16 = 56.25%;
+    // }
+
+    // @media only screen and (max-width: $bp-l) {
+    //     font-size: 37.5%;
+    // }
+
+    // @media only screen and (max-width: $bp-m) {
+    //     font-size: 31.25%;
+    // }
+
+    // @media only screen and (max-width: $bp-s) {
+    //     font-size: 62.5%;
+    // }
+
+    // @media only screen and (max-width: $bp-xs) {
+    //     font-size: 37.5%;
+    // }
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: $font-main, sans-serif;
+  font-weight: 300;
+}
+
+section {
+    padding: 14rem 8rem 22rem 8rem;
+
+    transform: skewY(-8deg);
+    
+    & > * {
+        transform: skewY(8deg);
+    }
+
+    &:first-of-type {
+        padding: 6rem 8rem 14rem 8rem;
+    }
+
+    &:nth-child(odd) {
+        background: whitesmoke;
+        background: whitesmoke;
+    }
+
+    &:nth-child(odd) {
+        // background: linear-gradient(#2DC8F3 0,#1497E2 70%);
+        // background: #1497E2 ;
+    }
+
+
+}
+
+/*--------------------*/
+/* TYPOGRAPHY */
+/*--------------------*/
+.heading-1 {
+    color: $color-secondary;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.heading-2 {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    color: $color-secondary;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    &::after {
+        content: "";
+        background: $color-primary;
+        display: block;
+        margin: 2rem auto;
+        width: 10rem;
+        height: 0.5rem;
+    }
+
+    
+    &--i {
+        color: whitesmoke;
+        font-style: italic;
+        font-weight: 300;
+        text-transform: capitalize;
+
+        &::after {
+            background: none;
+        }
+    }
+
+}
+
+.heading-4 {
+    font-size: 4rem;
+    color: white;
+    align-items: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.github:hover {
+    color: $color-github;
+}
+
+.linkedin:hover {
+    color:  $color-linkedin;
+}
+
+.facebook:hover {
+    color: $color-facebook;
+}
+
+
+/*--------------------*/
+/* UTILITIES */
+/*--------------------*/
+.mb-xs {margin-bottom: 0.5rem !important;}
+.mb-s {margin-bottom: 1.5rem !important;}
+.mb-m {margin-bottom: 3rem !important;}
+.mb-l {margin-bottom: 4rem !important;}
+.mb-xl {margin-bottom: 8rem !important;}
+
+.text-left {text-align: left !important;}
+
+
+

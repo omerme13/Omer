@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.footer {
+    background: $color-primary-dark-2;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 4rem;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    &__copy {
+        grid-column: 1 / -1;
+        align-self: end;
+    }
+
+    &__contact {
+        line-height: 1.4;
+    }
+
+    &__icons-container {
+        // justify-self: end;
+    }
+
+    &__email,
+    &__phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icons {
+        color: $color-icons;
+        font-size: 4rem;
+        margin-right: 1rem;
+        line-height: 1;
+    }
+}
