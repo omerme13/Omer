@@ -39,27 +39,9 @@ body {
 section {
     padding: 14rem 8rem 22rem 8rem;
 
-    transform: skewY(-8deg);
-    
-    & > * {
-        transform: skewY(8deg);
-    }
-
-    &:first-of-type {
-        padding: 6rem 8rem 14rem 8rem;
-    }
-
-    &:nth-child(odd) {
-        background: whitesmoke;
-        background: whitesmoke;
-    }
-
-    &:nth-child(odd) {
-        // background: linear-gradient(#2DC8F3 0,#1497E2 70%);
-        // background: #1497E2 ;
-    }
-
-
+    // &:first-of-type {
+    //     padding: 6rem 8rem 14rem 8rem;
+    // }
 }
 
 /*--------------------*/
@@ -90,7 +72,6 @@ section {
         height: 0.5rem;
     }
 
-    
     &--i {
         color: whitesmoke;
         font-style: italic;

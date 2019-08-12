@@ -22,7 +22,7 @@ const footer = () => (
             <Icon name='logo-linkedin' className="linkedin footer__icons" link='https://www.linkedin.com/in/omer-menachem-035b3b161/' />
         </div>
         <p className="footer__copy">
-            Built by Omer Menachem. &nbsp; All rights reserved &copy;2019
+            Built by Omer Menachem. &nbsp; All rights reserved &copy;2019.
         </p>
     </footer>
 );

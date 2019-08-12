@@ -9,7 +9,6 @@ const about = () => (
             <img src={m} className="about__image" />
             <div className="about__text">
                 <p className="about__paragraph">
-                    My name is Omer Menachem and I am a web developer and a programmer.
                     I live in Rosh Haayin Israel.
                     I have a B.Sc in Industrial Engineering from the Open University Of Israel.
                 </p>

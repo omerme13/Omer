@@ -5,13 +5,11 @@
     background-color: $color-primary-dark;
     position: relative;
     box-shadow: 0 1rem 2rem rgba($color-primary,0.2);
-
     border-radius: 3px;
+    border: 2px solid $color-secondary;
 
     &:hover {
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.45);
-
-
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.45);
     }
 
     &__name {
@@ -35,7 +33,6 @@
         &:hover {
             transform: scale(1.05);
             opacity: 1;
-            position: unset;
         }
     }
 
@@ -73,13 +70,14 @@
         opacity: 0;
     }
     
-    
+    &__name:hover ~ &__info,
     &__image:hover ~ &__info,
     &__info:hover {
         opacity: 1;
         bottom: 0;
     }
-    
+
+    &__name:hover ~ &__icons,
     &__image:hover ~ &__icons,
     &__icons:hover {
         opacity: 1;
