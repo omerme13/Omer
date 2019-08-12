@@ -6,7 +6,7 @@
     position: relative;
     box-shadow: 0 1rem 2rem rgba($color-primary,0.2);
     border-radius: 3px;
-    // border: 1px solid $color-secondary;
+    // border: 2px solid $color-secondary;
 
     &:hover {
         box-shadow: 0 1rem 2rem rgba(0,0,0,0.45);
@@ -25,10 +25,10 @@
         height: 100%;
         transform: scale(1.2);
         transition: all 0.5s;
-        opacity: 0.5;
+        opacity: 0.6;
         
         &:not(:hover) {
-            filter: blur(3px);
+            filter: blur(5px);
         }
 
         &:hover {

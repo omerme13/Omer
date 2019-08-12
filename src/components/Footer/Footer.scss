@@ -8,33 +8,43 @@
     position: absolute;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr max-content max-content 1fr max-content 1fr;
+    grid-template-rows: repeat(4, 1fr);
 
     &__copy {
-        grid-column: 1 / -1;
-        align-self: end;
-    }
-
-    &__contact {
-        line-height: 1.4;
+        grid-column: 3 / span 2;
+        grid-row: 4 / 5;
+        border-top: 1px solid lightgray;
+        display: block;
+        padding-top: 1.5rem;
     }
 
     &__icons-container {
-        // justify-self: end;
+        grid-column: 5 / span 1;
+        justify-self: end;
+        align-self: center;
     }
 
     &__email,
     &__phone {
+        grid-column: 2 / span 2;
+
         display: flex;
         align-items: center;
-        justify-content: center;
+    }
+
+    &__email {
+        grid-row: 1 / 2;
+    }
+
+    &__phone {
+        grid-row: 2 / 3;
     }
 
     &__icons {
         color: $color-icons;
         font-size: 4rem;
-        margin-right: 1rem;
         line-height: 1;
+        margin-right: 1rem;
     }
 }
