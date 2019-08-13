@@ -6,14 +6,14 @@ import './Footer.scss';
 
 const footer = () => (
     <footer className="footer">
-        <p className="footer__email">
+        <div className="footer__email">
             <Icon name="mail" className="footer__icons" />
-            omerme13@gmail.com
-        </p>
-        <p className="footer__phone">
+            <p>omerme13@gmail.com</p>
+        </div>
+        <div className="footer__phone">
             <Icon name="call" className="footer__icons" />
-            +972(0) 549146602
-        </p>
+            <p>+972(0) 549146602</p>
+        </div>
         <div className="footer__icons-container">
             <Icon name='logo-github' className="github footer__icons" link='https://github.com/omerme13' />
             <Icon name='logo-facebook' className="facebook footer__icons" link='https://www.facebook.com/omer.menachem.7' />
