@@ -1,33 +1,41 @@
 import React from 'react'
 
+import TimelineItem from './TimelineItem/TimelineItem';
+import workIcon from '../../../assets/img/work.svg';
+import educationIcon from '../../../assets/img/education.svg';
+
 import './Timeline.scss';
 
-const timeline = props => (
+const timeline = () => (
     <div className="timeline">
-        <img className="timeline__icon timeline__icon--work" src={props.work} />  
-        <img className="timeline__icon timeline__icon--education" src={props.education} />  
+        <img className="timeline__icon timeline__icon--work" src={workIcon} />  
+        <img className="timeline__icon timeline__icon--education" src={educationIcon} />  
         <ul className="timeline__education">
-            <li className="timeline__item">
-                <strong>Programming & Web Development</strong>,&nbsp; <em>Self taught</em>.                         
-            </li>
-            <li className="timeline__item">
-                <p className="timeline__paragraph">
-                    <strong>Industrial Engineering & Management</strong> (information systems Specialization ),&nbsp; graduated with honors. <em>The Open University of Israel</em>.
-                </p>
-            </li>
+            <TimelineItem 
+                year="2018 - 2019"
+                title="Programming & Web Development"
+                place="Self taught"
+            />
+            <TimelineItem 
+                year="2018 - 2019"
+                title="Industrial Engineering & Management"
+                description="Graduated with honors, specialized in Information Systems."
+                place="The Open University of Israel"
+            />                    
         </ul>
         <ul className="timeline__work">
-            <li className="timeline__item">
-                <strong>Web Developer</strong>,&nbsp; <em>Freelance</em>.                         
-            </li>
-            <li className="timeline__item">
-                <p className="timeline__paragraph">
-                    <strong>Production Planning & Control Manager</strong>,&nbsp; <em>Meishav B.M Ltd</em>.
-                </p>
-            </li>
+            <TimelineItem 
+                year="2018 - NOW"
+                title="Web Developer"
+                place="Freelance"
+            />
+            <TimelineItem 
+                year="2010 - 2018"
+                title="Production Planning & Control Manager"
+                place="Meishav B.M Ltd"
+            />    
         </ul>
     </div>
-
 )
 
 export default timeline;

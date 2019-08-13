@@ -3,45 +3,19 @@
 .timeline {
     list-style: none;
     display: grid;
-    grid-template-columns: 10rem 1fr;
-    // grid-template-rows: 1fr 1fr;
-    // align-items: start;
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: 1fr;
 
     &__work {
         grid-row: 1 / 2;
-        border-left: 3px dashed $color-secondary;
-        height: 100%;
+        // border-left: 0.3rem dashed $color-secondary;
+        border-left: 0.3rem dashed $color-primary;
     }
 
     &__education {
         grid-row: 2 / 3;
-        border-left: 3px dashed $color-secondary;
-        
-    }
-    
-    &__item {
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding: 2rem;
-        padding-left: 4rem;
-
-        &::before {
-            content: "";
-            display: block;
-            background: $color-primary;
-            height: 2rem;
-            width: 2rem;
-            border-radius: 50%;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translate(-52%, -50%);
-        }
-    }
-
-    &__paragraph {
-        text-align: left;
+        // border-left: 0.3rem dashed $color-secondary;
+        border-left: 0.3rem dashed $color-primary;
     }
 
     &__icon {
@@ -50,7 +24,6 @@
         &--work {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-
         }
 
         &--education {

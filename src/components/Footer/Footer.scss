@@ -5,8 +5,7 @@
     color: whitesmoke;
     font-size: 2rem;
     padding: 4rem;
-    position: absolute;
-    width: 100%;
+    margin: 0 8rem 8rem 8rem;
     display: grid;
     grid-template-columns: 1fr repeat(4, max-content) 1fr;
     grid-template-rows: repeat(4, 1fr);

@@ -1,18 +1,35 @@
 @import '../../variables.scss';
 
 .about {
+    margin-top: -28rem;
+    padding-top: 35rem;
 
     &__content {
-        // height: auto;
         display: flex;
+        justify-content: center;
     }
 
     &__text {
-        
+        flex: 0 1 40%;
+        margin-left: 8rem;
+        align-self: center;
+    }
+
+    &__image {
+        height: 40rem;
+        border-radius: 5px;
+        box-shadow: 0 2rem 4rem rgba(black, 0.3);
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: 0 3rem 4rem rgba(black, 0.3);
+            transform: translateY(-0.5rem) scale(1.03);
+        }
     }
 
     &__paragraph {
-        text-align: left;
-        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 1.6;
+        margin-bottom: 5rem;
     }
 }

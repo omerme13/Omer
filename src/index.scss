@@ -36,10 +36,17 @@ body {
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.4;
+  background: $color-primary;
 }
 
 section {
     padding: 14rem 8rem 22rem 8rem;
+    margin: 0 8rem; 
+    box-shadow: 0 2rem 4rem rgba(black, 0.3);
+
+    &:nth-child(even) {
+        background: white;
+    }
 
     // &:first-of-type {
     //     padding: 6rem 8rem 14rem 8rem;

@@ -4,10 +4,10 @@ import './SkillItem.scss';
 
 const skillItem = props => (
     <div className="skill-item">
-        <h4 className="heading-4 mb-xs text-left">
-        <img  className="skill-item__icon" src={props.icon1} />  
-        <img  className="skill-item__icon" src={props.icon2} />  
-        </h4>
+        <div className="skill-item__icons">
+            <img  className="skill-item__icon" src={props.icon1} />  
+            <img  className="skill-item__icon" src={props.icon2} />  
+        </div>
     
         <div className="skill-item__bars">
             <div className="skill-item__name">

@@ -1,0 +1,33 @@
+@import '../../../../variables.scss';
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 4rem;
+    
+    &__year {
+        // color: $color-secondary-dark;
+        color: $color-primary;
+        font-weight: 400;
+    }
+    
+    &__paragraph {
+        text-align: left;
+        position: relative;
+    
+        &::before {
+            content: "";
+            display: block;
+            // background: $color-primary;
+            background: $color-secondary;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            position: absolute;
+            left: -4rem;
+            top: 1.8rem;
+            transform: translate(-53%, -50%);
+        }
+    }
+}

@@ -2,12 +2,10 @@
 
 .home {
 
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100% );
     clip-path: polygon(50% 0%, 100% 0, 100% 66%, 50% 99%, 0 66%, 0 0);
-
     
     &__background {
-        background-image: linear-gradient(to right, rgba($color-primary, 0.9), rgba($color-primary, 0.9)), url('../../assets/img/laptop.jpg'); 
+        background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba($color-primary, 0.9)), url('../../assets/img/laptop.jpg'); 
         // filter: blur(3px);
         background-attachment: fixed; 
         background-size: cover;
