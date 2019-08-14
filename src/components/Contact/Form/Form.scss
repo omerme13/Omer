@@ -4,21 +4,22 @@
     width: 80%;
     margin: 0 auto;
 
-
     // refer to text inputs
     &__input,
     &__textarea {
         margin: 2rem auto;
         font-size: 2rem;
         padding: 1.5rem 2rem;
-        border-radius: 2px;
+        border-radius: 3px;
         border: none;
         width: 50%;
-        display: block; // we want the element to get ta full line
+        display: block; 
         font-family: inherit;
-        color: inherit;
-        border-bottom: 3px solid transparent; // if there is no line the sudden appearance of it make the next element to "jump"
+        border-bottom: 3px solid transparent;
+        background: $color-primary-lightest;
+        
         transition: 0.3s;
+
 
         &::-webkit-input-placeholder {
             color: $color-primary-dark;
@@ -28,7 +29,7 @@
             outline: none;
             box-shadow: 0 1rem 2rem rgba(black, 0.15);
             border-bottom: 3px solid $color-primary;
-            background: $color-secondary-light-2;
+            background: $color-secondary-lighter;
 
             &:invalid {
                 border-bottom: 3px solid orangered;
@@ -47,17 +48,19 @@
 
     &__button {
         font-size: 2rem;
+        font-weight: bold;
         padding: 10px 30px;
         border-radius: 3px;
         background-color: transparent;
-        border: 2px solid $color-primary-dark-1;
-        color: $color-secondary;
+        border: 2px solid $color-primary-lightest;
+        color: $color-primary-lightest;
         margin-top: 5rem;
         transition: 0.4s;
 
         &:hover {
-            background-color: $color-secondary-light-1;
-            color: $color-primary-dark-1;
+            background-color: $color-secondary-dark;
+            color: $color-primary-darker;
+            border: 2px solid $color-secondary-dark;
             cursor: pointer;
         }
     }

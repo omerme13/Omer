@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .footer {
-    background: $color-primary-dark-2;
+    background: $color-primary-darkest;
     color: whitesmoke;
     font-size: 2rem;
     padding: 4rem;
@@ -10,6 +10,8 @@
     grid-template-columns: 1fr repeat(4, max-content) 1fr;
     grid-template-rows: repeat(4, 1fr);
     justify-content: center;
+    box-shadow: 0 2rem 4rem rgba(black,0.3);
+
 
     &__copy {
         grid-column: 3 / span 2;

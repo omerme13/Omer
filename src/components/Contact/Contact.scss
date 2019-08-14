@@ -2,61 +2,8 @@
 
 .contact {
     background: 
-        linear-gradient(45deg, $color-primary-dark-2 5%, transparent 5%, transparent 95%, white 95%),
-        linear-gradient(-45deg, $color-primary-dark-2 5%, rgba($color-primary-dark-1, 0.3) 5%, $color-primary-dark-1 95%, white 95%);
-        
-    &__icons {
-        font-size: 5rem;
-        display: inline-block;
-        margin: 5px;
-        transition: 0.3s;
-        color: #1e1e1ee6;
-
-        &:hover {
-            color: #f1c40f;
-        }
-    }
-
-    &__github {
-        animation: animate-contact 1.5s; 
-    }
-
-    &__linkedin {
-        animation: animate-contact 0.5s; 
-    }
-    
-    &__facebook {
-        animation: animate-contact 1s; 
-    }
-    
-
-    &__phone-icon {
-        animation: animate-contact 2.5s; 
-    }
-    
-    &__mail-icon {
-        animation: animate-contact 2s; 
-    }
-
-    &__phone-icon:hover,
-    &__mail-icon:hover {
-        transform: rotateZ(15deg);
-        cursor: pointer;
-        color: white;
-    }
-}
-
-
-
-@keyframes animate-contact {
-    from {
-        transform: translateX(-50rem);
-    }
-
-    60% {
-        transform: translateX(2rem)
-    }
-    to {
-        transform: translateX(0);
-    }
+        // linear-gradient(45deg, $color-primary-darker 5%, transparent 5%, transparent 95%, $color-primary-darker 95%),
+        // linear-gradient(-45deg, $color-primary-darker 5%, rgba($color-primary-dark, 0.3) 5%, $color-primary-dark 95%, $color-primary-darker 95%);
+        linear-gradient(to top, $color-primary-darker, $color-primary-darkest);
+        box-shadow: 0 2rem 4rem rgba(black,0.3);
 }
