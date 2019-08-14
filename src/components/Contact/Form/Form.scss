@@ -1,0 +1,67 @@
+@import '../../../variables.scss';
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+
+
+    // refer to text inputs
+    &__input,
+    &__textarea {
+        margin: 2rem auto;
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        border: none;
+        width: 50%;
+        display: block; // we want the element to get ta full line
+        font-family: inherit;
+        color: inherit;
+        border-bottom: 3px solid transparent; // if there is no line the sudden appearance of it make the next element to "jump"
+        transition: 0.3s;
+
+        &::-webkit-input-placeholder {
+            color: $color-primary-dark;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, 0.15);
+            border-bottom: 3px solid $color-primary;
+            background: $color-secondary-light-2;
+
+            &:invalid {
+                border-bottom: 3px solid orangered;
+            }
+        }
+    }
+
+    &__textarea {
+        height: 15rem;
+
+        &:focus {
+            border-bottom: none;
+        }
+    }
+
+
+    &__button {
+        font-size: 2rem;
+        padding: 10px 30px;
+        border-radius: 3px;
+        background-color: transparent;
+        border: 2px solid $color-primary-dark-1;
+        color: $color-secondary;
+        margin-top: 5rem;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $color-secondary-light-1;
+            color: $color-primary-dark-1;
+            cursor: pointer;
+        }
+    }
+    
+
+
+}

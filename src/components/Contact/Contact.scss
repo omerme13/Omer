@@ -2,8 +2,9 @@
 
 .contact {
     background: 
-        linear-gradient(45deg, $color-secondary 5%, transparent 5%, transparent 95%, $color-secondary 95%),
-        linear-gradient(-45deg, $color-secondary 5%, $color-primary-dark-1 5%, $color-primary-dark-1 95%, $color-secondary 95%);
+        linear-gradient(45deg, $color-primary-dark-2 5%, transparent 5%, transparent 95%, white 95%),
+        linear-gradient(-45deg, $color-primary-dark-2 5%, rgba($color-primary-dark-1, 0.3) 5%, $color-primary-dark-1 95%, white 95%);
+        
     &__icons {
         font-size: 5rem;
         display: inline-block;
