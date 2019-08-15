@@ -12,23 +12,41 @@ import node from '../../assets/img/node.svg';
 import express from '../../assets/img/express.svg';
 import postgresql from '../../assets/img/postgresql.svg';
 
-
 import './Skills.scss';
+import HalfCircle from './SkillItem/HalfCircle/HalfCircle';
+
+const skillList = [
+    {name:"HTML", precent: '90%', icon1: html, icon2: null},
+    {name:"CSS & SASS", precent: '85%', icon1: css, icon2: sass},
+    {name:"JavaScript", precent: '75%', icon1: js, icon2: null},
+    {name:"React", precent: '65%', icon1: react, icon2: null},
+    {name:"Redux", precent: '55%', icon1: redux, icon2: null},
+    {name:"Node & Express", precent: '55%', icon1: node, icon2: express},
+    {name:"PostgreSQL", precent: '75%', icon1: postgresql, icon2: null},
+];
 
 const skills = () => (
     <section className="skills">
         <h2 className="heading-2">my skills</h2>
         <p className="skills__paragraph">Here are the levels of my confidence in these areas:</p>
         <div className="skills__wrapper">
-            <SkillItem name="HTML" icon1={html}>90%</SkillItem>
-            <SkillItem name="CSS & SASS" icon1={css} icon2={sass}>85%</SkillItem>
-            <SkillItem name="JS" icon1={js}>75%</SkillItem>
-            <SkillItem name="React" icon1={react}>65%</SkillItem>
-            <SkillItem name="Redux" icon1={redux}>55%</SkillItem>
-            <SkillItem name="Node & Express" icon1={node} icon2={express}>55%</SkillItem>
-            <SkillItem name="PostgreSQL" icon1={postgresql}>75%</SkillItem>
+
+
+        <HalfCircle left="blue" right="teal" />
+        <HalfCircle left="teal" right="transparent" fixed="half-circle__border--fixed"/>
+         
+         
+            {skillList.map(skill => (
+                <SkillItem
+                    key={skill.name}
+                    name={skill.name} 
+                    precent={skill.precent}
+                    icon1={skill.icon1} 
+                    icon2={skill.icon2}
+                />
+            ))}
         </div>
     </section>
-)
+);
 
 export default skills;

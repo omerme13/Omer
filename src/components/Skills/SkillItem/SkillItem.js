@@ -1,5 +1,7 @@
 import React from 'react';
 
+import HalfCircle from './HalfCircle/HalfCircle';
+
 import './SkillItem.scss';
 
 const skillItem = props => (
@@ -13,13 +15,12 @@ const skillItem = props => (
             <div className="skill-item__name">
                 {props.name}    
             </div>
-            <div className="skill-item__bar" style={{maxWidth: props.children, left: 0}}>
+            <div className="skill-item__bar" style={{maxWidth: props.precent, left: 0}}>
                 <p className="skill-item__precent">
-                    {props.children} 
+                    {props.precent} 
                 </p>
             </div>
         </div>    
-        
     </div>
 )
 
