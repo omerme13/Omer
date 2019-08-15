@@ -1,7 +1,5 @@
 import React from 'react';
 
-import HalfCircle from './HalfCircle/HalfCircle';
-
 import './SkillItem.scss';
 
 const skillItem = props => (

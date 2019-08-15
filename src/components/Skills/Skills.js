@@ -1,6 +1,11 @@
 import React from 'react';
 
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import { easeQuadInOut } from 'd3-ease';
+
 import SkillItem from './SkillItem/SkillItem';
+import Circle from './SkillItem/Circle/Circle';
 
 import html from '../../assets/img/html-5.svg';
 import css from '../../assets/img/css-3.svg';
@@ -13,7 +18,7 @@ import express from '../../assets/img/express.svg';
 import postgresql from '../../assets/img/postgresql.svg';
 
 import './Skills.scss';
-import HalfCircle from './SkillItem/HalfCircle/HalfCircle';
+
 
 const skillList = [
     {name:"HTML", precent: '90%', icon1: html, icon2: null},
@@ -29,14 +34,14 @@ const skills = () => (
     <section className="skills">
         <h2 className="heading-2">my skills</h2>
         <p className="skills__paragraph">Here are the levels of my confidence in these areas:</p>
-        <div className="skills__wrapper">
 
+        {/* <CircularProgressbar value="90" text="90%" /> */}
+        <Circle />
+          
+         <div className="skills__wrapper">
 
-        <HalfCircle left="blue" right="teal" />
-        <HalfCircle left="teal" right="transparent" fixed="half-circle__border--fixed"/>
          
-         
-            {skillList.map(skill => (
+             {skillList.map(skill => (
                 <SkillItem
                     key={skill.name}
                     name={skill.name} 
