@@ -1,9 +1,9 @@
 @import '../../variables.scss';
 
 .skills {
+
     background: whitesmoke;
     margin: -9rem 6rem;
-
     transform: skewY(-5deg);
     
     & > * {
@@ -15,7 +15,10 @@
     }
 
     &__wrapper {
-        // width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 7rem;
     }
 }
 

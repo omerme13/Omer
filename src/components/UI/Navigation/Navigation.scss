@@ -1,0 +1,152 @@
+@import '../../../variables.scss';
+
+.navigation {
+
+    &__background {
+        width: 6rem;
+        height: 6rem;
+        position: fixed;
+        top: 6.5rem;
+        right: 7rem;
+        z-index: 11;
+        border-radius: 50%;
+        background-image: radial-gradient(rgba($color-primary-light, 0.9), rgba($color-primary-dark, 0.9));
+        transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+
+        &--animated { 
+            transform: scale(80);
+        }
+    }
+
+    &__button {
+        width: 7rem;
+        height: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6.5rem;
+        z-index: 13;
+        border-radius: 50%;
+        box-shadow: 0 1rem 3rem rgba(black, 0.15);
+        background: whitesmoke;
+        cursor: pointer;
+        display: flex;
+    }
+
+    &__nav {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 12;
+        visibility: hidden;
+        opacity: 0; // i can't just set opacity to 0 because the links are still active so i used visibility: hidden to hide it but opacity for the animation
+        transition: opacity 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &--animated {
+            visibility: visible;
+            opacity: 1; // for animation purposes
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        text-align: center;
+        margin: 1.5rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 3rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+            background-size: 230%;
+            transition: 0.4s;
+        }
+
+        &:hover, 
+        &:active {
+            color: $color-primary;
+            background-position: 100%;
+
+        }
+    }
+
+
+
+    // icon
+    &__icon {
+        position: relative;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+
+        &,
+        &::before,
+        &::after {
+            background: $color-primary-darker;
+            height: 2px;
+            width: 3rem;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: 0.3s;
+        }
+
+        &:before {
+            top: -0.8rem;
+        }
+
+        &:after {
+            top: 0.8rem;
+        }
+
+        &--animated {
+            background: transparent ; 
+        }
+    }
+
+    &__button:hover &__icon:not(.navigation__icon--animated) {
+
+        &::before {
+            transform: translateY(-2px);
+        }
+
+        &::after {
+            transform: translateY(2px);
+        }
+    }
+
+    &__button &__icon--animated {
+
+        &:before {
+            transform: rotate(225deg);
+            top: 0;
+        }
+
+        &:after {
+            transform: rotate(-225deg);
+            top: 0;
+        }
+    }
+}

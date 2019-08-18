@@ -1,61 +1,92 @@
 @import '../../../variables.scss';
 
 .skill-item {
-    
-    &__icons {
-        display: flex;
-    }
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
 
     &__icon {
-        height: 4rem;
-        margin-bottom: 0.7rem;
-        margin-right: 0.7rem;
+        height: 5rem;
     }
 
-    &__bars {
-        height: 3rem;
-        line-height: 3rem;
-        font-size: 2rem;
-        font-weight: 400;
-        color: $color-secondary;
-        position: relative;
-        text-align: right;
-        background: rgba(45,45,45, 0.05);
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        margin-bottom: 2.5rem;
+    .CircularProgressbar {
+        height: 18rem;
+        width: 18rem;
+        margin: 0.5rem;
+        overflow: visible;
+        
+        &-text {
+            font-size: 2rem;
+            fill: $color-primary-darkest;
+            margin: -20rem;
+            // transform: translateY(-6rem);
+            overflow: auto;
+            height: 2rem;
+            background: red;
+        }
+
+        &-path {
+            stroke: $color-primary;
+            transition: 0.5s;
+
+        }
+
+        &-trail {
+            stroke: $color-primary-lightest;
+        }
     }
 
-    &__name {
-        position: absolute;
-        left: 0;
-        z-index: 5;
-        width: 15rem;
-        text-align: center;
-        background: $color-primary;
-    }
+    // &__icons {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    // }
 
-    &__bar {
-        width: 100%;
-        position: absolute;
-        height: 3rem;
-        background-image: linear-gradient(to right, $color-primary-light 0,$color-primary 70%);
-        padding-left: 15rem;
-        animation: animate-skills 4s;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
 
-    &__precent {
-        padding-right: 1.2rem;
-    }
+    // &__bars {
+    //     height: 3rem;
+    //     line-height: 3rem;
+    //     font-size: 2rem;
+    //     font-weight: 400;
+    //     color: $color-secondary;
+    //     position: relative;
+    //     text-align: right;
+    //     background: rgba(45,45,45, 0.05);
+    //     border-top-right-radius: 5px;
+    //     border-bottom-right-radius: 5px;
+    //     margin-bottom: 2.5rem;
+    // }
+
+    // &__name {
+        // position: absolute;
+        // left: 0;
+        // z-index: 5;
+        // width: 15rem;
+        // text-align: center;
+        // background: $color-primary;
+    // }
+
+    // &__bar {
+    //     width: 100%;
+    //     position: absolute;
+    //     height: 3rem;
+    //     background-image: linear-gradient(to right, $color-primary-light 0,$color-primary 70%);
+    //     padding-left: 15rem;
+    //     animation: animate-skills 4s;
+    //     border-top-right-radius: 5px;
+    //     border-bottom-right-radius: 5px;
+    // }
+
+    // &__precent {
+    //     padding-right: 1.2rem;
+    // }
 }
 
-@keyframes animate-skills {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
+// @keyframes animate-skills {
+//     0% {
+//         width: 0;
+//     }
+//     100% {
+//         width: 100%;
+//     }
+// }

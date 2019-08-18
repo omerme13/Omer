@@ -8,7 +8,9 @@
     "react": "^16.8.6",
     "react-circular-progressbar": "^2.0.2",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.13",
+    "react-visibility-sensor": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

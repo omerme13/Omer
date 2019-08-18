@@ -4,7 +4,7 @@ import Icon from '../UI/Icon/Icon';
 import omer from '../../assets/img/omer.PNG';
 
 const home = () => (
-    <header className="home">
+    <header className="home" id="home">
         <div className="home__background"></div>
         <div className="home__content">
             <h1 className="heading-1 ">OMER MENACHEM</h1>

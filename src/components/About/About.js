@@ -6,7 +6,7 @@ import snow from '../../assets/img/snow.jpg';
 import './About.scss';
 
 const about = () => (
-    <section className="about">
+    <section className="about" id="about">
         <h2 className="heading-2">about me</h2>
         <div className="about__content">
             <Timeline />

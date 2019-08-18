@@ -6,7 +6,7 @@ import './Work.scss';
 
 
 const work = () => (
-    <section className="work">
+    <section className="work" id="work">
         <h2 className="heading-2">my work</h2>
         <Projects />
     </section>
