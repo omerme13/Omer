@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Timeline from './Timeline/Timeline';
-import snow from '../../assets/img/snow.jpg';
+import computer from '../../assets/img/computer.jpg';
 
 import './About.scss';
 
@@ -16,7 +16,7 @@ const about = () => (
                     When I was a student I have discovered the wonderful world of web development.
                     I explored, learned and worked in this field ever since. I love what I do. 
                 </p>
-                <img className="about__image" src={snow} alt="omer" />
+                <img className="about__image" src={computer} alt="omer" />
             </div>
         </div>
     </section>
