@@ -28,7 +28,7 @@ const skillList = [
 const skills = () => (
     <section className="skills" id="skills">
         <h2 className="heading-2">my skills</h2>
-        <p className="skills__paragraph">Here are the levels of my confidence in these areas:</p>
+        <p className="skills__paragraph">My proficiency in web technologies:</p>
           
          <div className="skills__wrapper">
          
