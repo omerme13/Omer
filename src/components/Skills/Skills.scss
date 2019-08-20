@@ -4,21 +4,22 @@
 
     background: whitesmoke;
     margin: -9rem 6rem;
+    padding-bottom: 14rem;
     transform: skewY(-5deg);
+
+    @media only screen and (max-width: $bp-l) {
+        margin: -9rem 0; 
+    }
     
     & > * {
         transform: skewY(5deg);
-    }
-    
-    &__paragraph {
-        margin-bottom: 3rem;
     }
 
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 7rem;
+        margin-top: 3rem;
     }
 }
 

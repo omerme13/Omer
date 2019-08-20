@@ -1,8 +1,11 @@
 @import '../../variables.scss';
 
 .home {
-
     clip-path: polygon(50% 0%, 100% 0, 100% 66%, 50% 99%, 0 66%, 0 0);
+
+    @media only screen and (max-width: $bp-s) {
+        clip-path: none;
+    }
     
     &__background {
         background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba($color-primary, 0.9)), url('../../assets/img/laptop.jpg'); 

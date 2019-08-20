@@ -12,6 +12,18 @@
     justify-content: center;
     box-shadow: 0 2rem 4rem rgba(black,0.3);
 
+    @media only screen and (max-width: $bp-l) {
+        margin: 0; 
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+        display: flex;
+        height: 32rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     &__copy {
         grid-column: 3 / span 2;

@@ -1,20 +1,24 @@
 @import '../../../variables.scss';
 
 .timeline {
+    flex: 0 1 50%;
+
     list-style: none;
     display: grid;
     grid-template-columns: 12rem 1fr;
     grid-template-rows: 1fr;
 
+    @media only screen and (max-width: $bp-s) {
+        margin-bottom: 10rem;
+    }
+
     &__work {
         grid-row: 1 / 2;
-        // border-left: 0.3rem dashed $color-secondary;
         border-left: 0.3rem dashed $color-primary;
     }
 
     &__education {
         grid-row: 2 / 3;
-        // border-left: 0.3rem dashed $color-secondary;
         border-left: 0.3rem dashed $color-primary;
     }
 

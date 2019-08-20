@@ -3,18 +3,17 @@
     padding: 2rem;
     width: 60%;
     margin: 3rem auto;
-    font-weight: 400;
 }
 
 .error {
     border: 1px solid red;
-    color: red;
+    color: white;
     background-color: rgba(255,0,0,0.1);
 }
 
 .success {
     border: 1px solid green;
-    color: green;
+    color: white;    
     background-color: rgba(0,255,0,0.1);
 }
 

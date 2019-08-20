@@ -3,7 +3,7 @@
 .skill-item {
     display: flex;
     flex-direction: column;
-    margin: 5rem;
+    margin: 2rem 5rem;
 
     &__icon {
         height: 5rem;
@@ -19,7 +19,6 @@
             font-size: 2rem;
             fill: $color-primary-darkest;
             margin: -20rem;
-            // transform: translateY(-6rem);
             overflow: auto;
             height: 2rem;
             background: red;
