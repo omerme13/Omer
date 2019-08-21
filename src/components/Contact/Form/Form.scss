@@ -8,7 +8,8 @@
     &__input,
     &__textarea {
         margin: 2rem auto;
-        font-size: 2rem;
+        font-size: inherit;
+        font-family: inherit;
         padding: 1.5rem 2rem;
         border-radius: 3px;
         border: none;
@@ -20,7 +21,7 @@
         transition: 0.3s;
 
         @media only screen and (max-width: $bp-xs) {
-            width: 80%;
+            width: 90%;
         }
 
 
@@ -49,7 +50,8 @@
     }
 
     &__button {
-        font-size: 2rem;
+        font-size: inherit;
+        font-family: inherit;
         font-weight: bold;
         padding: 1.5rem 3rem;
         border-radius: 3px;
@@ -58,7 +60,7 @@
         color: $color-primary-lightest;
         margin-top: 5rem;
         text-transform: uppercase;
-        letter-spacing: 0.2rem;
+        letter-spacing: 1px;
         transition: 0.4s;
 
         &:hover {

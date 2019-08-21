@@ -60,11 +60,5 @@
         margin-bottom: 3rem;
         height: 8rem;  // as the icons height to prevent jumping before they are rendered
     }
-
-    &__arrow {
-        font-size: 6rem;
-        animation: point-down 2s ease-in-out infinite;
-    }
-
 }
 
