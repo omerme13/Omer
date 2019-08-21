@@ -1,15 +1,14 @@
 import React from 'react'
 
+import Icon from '../../UI/Icon/Icon';
 import TimelineItem from './TimelineItem/TimelineItem';
-import workIcon from '../../../assets/img/work.svg';
-import educationIcon from '../../../assets/img/education.svg';
 
 import './Timeline.scss';
 
 const timeline = () => (
     <div className="timeline">
-        <img className="timeline__icon timeline__icon--work" src={workIcon} />  
-        <img className="timeline__icon timeline__icon--education" src={educationIcon} />  
+        <Icon className="timeline__icon timeline__icon--work" name="ios-briefcase" />
+        <Icon className="timeline__icon timeline__icon--education" name="ios-ribbon" />
         <ul className="timeline__education">
             <TimelineItem 
                 year="2018 - 2019"
@@ -17,7 +16,7 @@ const timeline = () => (
                 place="Self taught"
             />
             <TimelineItem 
-                year="2018 - 2019"
+                year="2014 - 2018"
                 title="Industrial Engineering & Management"
                 description="Graduated with honors, specialized in Information Systems."
                 place="The Open University of Israel"

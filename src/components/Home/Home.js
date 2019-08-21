@@ -7,7 +7,7 @@ const home = () => (
     <header className="home" id="home">
         <div className="home__background"></div>
         <div className="home__content">
-            <h1 className="heading-1 ">OMER MENACHEM</h1>
+            <h1 className="heading-1 ">Omer Menachem</h1>
             <div className="home__details">
                 <img className="home__image" src={omer} alt="Omer Menachem"/>
                 <h2 className="heading-2 heading-2--i">Web Developer & Programmer</h2>
@@ -17,8 +17,6 @@ const home = () => (
                 <Icon name='logo-linkedin' className="linkedin home__icons" link='https://www.linkedin.com/in/omer-menachem-035b3b161/' />
                 <Icon name='logo-github' className="github home__icons" link='https://github.com/omerme13' />
             </div>
-            {/* <Icon name='arrow-dropdown' className="home__icons home__arrow" /> */}
-
         </div>
     </header>
 )

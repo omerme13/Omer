@@ -14,7 +14,7 @@ const skillItem = props => (
             <img  className="skill-item__icon" src={props.icon1} />  
             <img  className="skill-item__icon" src={props.icon2} />  
         </div>
-        <VisibilitySensor>
+        <VisibilitySensor partialVisibility>
             {({ isVisible }) => {
                 const percentage = isVisible ? props.precent.slice(0, -1) : 0;
                 return (
@@ -22,7 +22,6 @@ const skillItem = props => (
                         value={percentage}
                         text={`${percentage}%`}
                     />
-
                 );
             }}
         </VisibilitySensor>

@@ -12,9 +12,10 @@ const about = () => (
             <Timeline />
             <div className="about__text">
                 <p className="about__paragraph">
-                    I am a freelance web developer & an Industrial Engineer whom specialized in information systems.
+                    I am a freelance web developer & an Industrial Engineer that specialized in information systems.<br/>
                     When I was a student I have discovered the wonderful world of web development.
-                    I explored, learned and worked in this field ever since. I love what I do. 
+                    I explored, learned and worked in this field ever since. I love this job. 
+                    For that reason I manage to learn and develope every day. 
                 </p>
                 <img className="about__image" src={computer} alt="omer" />
             </div>

@@ -2,14 +2,13 @@
 
 .home {
     clip-path: polygon(50% 0%, 100% 0, 100% 66%, 50% 99%, 0 66%, 0 0);
-
+    
     @media only screen and (max-width: $bp-s) {
         clip-path: none;
     }
     
     &__background {
-        background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba($color-primary, 0.9)), url('../../assets/img/laptop.jpg'); 
-        // filter: blur(3px);
+        background-image: linear-gradient(to  bottom, rgba($color-primary-darkest, 0.8), rgba($color-primary-light, 0.9)), url('../../assets/img/laptop.jpg'); 
         background-attachment: fixed; 
         background-size: cover;
         background-position: center;
@@ -28,11 +27,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+        @media only screen and (max-width: $bp-s) {
+            margin-top: 10%;
+        }
     }
 
     &__details {
-        justify-self: flex-end;
-        margin-top: auto;
+        margin: auto 0 -5rem 0;
+        align-self: center; //  prevents the default stretch
+
     }
 
     &__image {
@@ -41,6 +45,7 @@
         height: 30rem;
         width: 30rem;
         padding: 0.5rem;
+        animation: moveInBottom 1s ease-out;
     }
 
     &__icons {
@@ -53,6 +58,7 @@
     &__icons-container {
         margin-top: auto;
         margin-bottom: 3rem;
+        height: 8rem;  // as the icons height to prevent jumping before they are rendered
     }
 
     &__arrow {
@@ -60,19 +66,5 @@
         animation: point-down 2s ease-in-out infinite;
     }
 
-}
-
-@keyframes point-down {
-    0% {
-        transform: translateY(-1rem);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        color: $color-secondary;
-        opacity: 1;
-        
-    }
 }
 

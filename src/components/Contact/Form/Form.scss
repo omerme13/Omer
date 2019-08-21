@@ -51,12 +51,14 @@
     &__button {
         font-size: 2rem;
         font-weight: bold;
-        padding: 10px 30px;
+        padding: 1.5rem 3rem;
         border-radius: 3px;
         background-color: transparent;
         border: 2px solid $color-primary-lightest;
         color: $color-primary-lightest;
         margin-top: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
         transition: 0.4s;
 
         &:hover {

@@ -5,8 +5,16 @@
     flex-direction: column;
     margin: 2rem 5rem;
 
+    @media only screen and (max-width: $bp-xs) {
+        margin: 2rem 2rem;
+    }
+
     &__icon {
         height: 5rem;
+    }
+
+    &__name {
+        // font-size: 3rem;
     }
 
     .CircularProgressbar {
@@ -16,18 +24,13 @@
         overflow: visible;
         
         &-text {
-            font-size: 2rem;
             fill: $color-primary-darkest;
-            margin: -20rem;
-            overflow: auto;
-            height: 2rem;
-            background: red;
+            height: 2rem;  // svg by height not font-size
         }
 
         &-path {
             stroke: $color-primary;
-            transition: 0.5s;
-
+            transition: 1s;
         }
 
         &-trail {
