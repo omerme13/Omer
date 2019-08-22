@@ -15,7 +15,6 @@
         border: none;
         width: 50%;
         display: block; 
-        font-family: inherit;
         border-bottom: 3px solid transparent;
         background: $color-primary-lightest;
         transition: 0.3s;
@@ -23,7 +22,6 @@
         @media only screen and (max-width: $bp-xs) {
             width: 90%;
         }
-
 
         &::-webkit-input-placeholder {
             color: $color-primary-dark;
@@ -70,7 +68,4 @@
             cursor: pointer;
         }
     }
-    
-
-
 }

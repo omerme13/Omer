@@ -4,7 +4,6 @@ import Projects from './Projects/Projects';
 
 import './Work.scss';
 
-
 const work = () => (
     <section className="work" id="work">
         <h2 className="heading-2">my work</h2>

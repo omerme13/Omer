@@ -1,0 +1,29 @@
+@import '../../../../variables.scss';
+
+.navigation__item {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.navigation__link {
+    &:link,
+    &:visited {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        letter-spacing: 1px;
+        transition: 0.4s;
+    }
+
+    &:hover, 
+    &:active {
+        letter-spacing: 0.25rem;
+        transform: scale(1.1);
+        font-weight: 600;
+        color: $color-secondary;
+    }
+}

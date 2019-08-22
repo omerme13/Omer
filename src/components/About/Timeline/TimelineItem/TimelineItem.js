@@ -13,7 +13,7 @@ const timelineItem = props => {
     return (
         <li className="timeline-item">
             <p className="timeline-item__paragraph">
-                <p className="timeline-item__year">{props.year}</p>
+                <div className="timeline-item__year">{props.year}</div>
                 <strong>{props.title}</strong><br/> 
                 {description}{lineBreak}
                 <em>{props.place}</em>.                                       

@@ -13,10 +13,6 @@
         height: 5rem;
     }
 
-    &__name {
-        // font-size: 3rem;
-    }
-
     .CircularProgressbar {
         height: 18rem;
         width: 18rem;
@@ -37,58 +33,4 @@
             stroke: $color-primary-lightest;
         }
     }
-
-    // &__icons {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-    // }
-
-
-    // &__bars {
-    //     height: 3rem;
-    //     line-height: 3rem;
-    //     font-size: 2rem;
-    //     font-weight: 400;
-    //     color: $color-secondary;
-    //     position: relative;
-    //     text-align: right;
-    //     background: rgba(45,45,45, 0.05);
-    //     border-top-right-radius: 5px;
-    //     border-bottom-right-radius: 5px;
-    //     margin-bottom: 2.5rem;
-    // }
-
-    // &__name {
-        // position: absolute;
-        // left: 0;
-        // z-index: 5;
-        // width: 15rem;
-        // text-align: center;
-        // background: $color-primary;
-    // }
-
-    // &__bar {
-    //     width: 100%;
-    //     position: absolute;
-    //     height: 3rem;
-    //     background-image: linear-gradient(to right, $color-primary-light 0,$color-primary 70%);
-    //     padding-left: 15rem;
-    //     animation: animate-skills 4s;
-    //     border-top-right-radius: 5px;
-    //     border-bottom-right-radius: 5px;
-    // }
-
-    // &__precent {
-    //     padding-right: 1.2rem;
-    // }
 }
-
-// @keyframes animate-skills {
-//     0% {
-//         width: 0;
-//     }
-//     100% {
-//         width: 100%;
-//     }
-// }

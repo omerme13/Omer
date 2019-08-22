@@ -29,10 +29,8 @@ const skills = () => (
     <section className="skills" id="skills">
         <h2 className="heading-2">my skills</h2>
         <p className="skills__paragraph">My proficiency in web technologies:</p>
-          
-         <div className="skills__wrapper">
-         
-             {skillList.map(skill => (
+        <div className="skills__wrapper">
+            {skillList.map(skill => (
                 <SkillItem
                     key={skill.name}
                     name={skill.name} 

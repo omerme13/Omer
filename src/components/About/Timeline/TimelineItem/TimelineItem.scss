@@ -3,11 +3,9 @@
 .timeline-item {
     display: flex;
     align-items: center;
-    padding: 2rem;
-    padding-left: 4rem;
+    padding: 2rem 0 0 4rem;
     
     &__year {
-        // color: $color-secondary-dark;
         color: $color-primary;
         font-weight: 400;
     }
@@ -19,7 +17,6 @@
         &::before {
             content: "";
             display: block;
-            // background: $color-primary;
             background: $color-secondary;
             height: 2rem;
             width: 2rem;
