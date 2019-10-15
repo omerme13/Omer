@@ -11,7 +11,7 @@ const project = props => (
             {props.name}
         </h4>
         <div className="project__info">
-            {props.children}
+            {props.info}
         </div>
         <div className="project__icons">
             <Icon name="globe" color="#3498db" link={props.url} />
