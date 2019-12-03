@@ -15,7 +15,7 @@ const project = props => (
         </div>
         <div className="project__icons">
             <Icon name="globe" color="#3498db" link={props.url} />
-            <Icon name="logo-github" color="#333" link={props.gitUrl} />
+            <Icon name="logo-github" color="#333" link={props.gitUrl} clicked={props.clicked} />
         </div>
     </div>
 )

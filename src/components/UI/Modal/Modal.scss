@@ -1,0 +1,48 @@
+@import '../../../variables.scss';
+
+.modal {
+    position: fixed;
+    z-index: 500;
+    background-color: rgba($color-primary, 0.85);
+    width: 40%;
+    height: auto;
+    left: 30%;
+    top: 20%;
+    padding: 5rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 4rem rgba(black, 0.2);
+    transition: all 0.3s ease-out;
+
+    &__text:link,
+    &__text:visited {
+        font-size: 4rem;
+        text-decoration: none;
+        color: inherit;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-secondary;
+        }
+
+        @media only screen and (max-width: $bp-s) {
+            font-size: 2rem;
+        }
+    }
+
+    &__close-button {
+        cursor: pointer;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        font-size: 3rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    @media only screen and (max-width: $bp-xl) {
+        top: 15%;
+    }
+}
