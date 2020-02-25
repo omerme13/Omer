@@ -1,28 +1,16 @@
-import React from 'react';
+import React from "react";
+import SkillItem from "./SkillItem/SkillItem";
 
-import SkillItem from './SkillItem/SkillItem';
-
-import html from '../../assets/img/html-5.svg';
-import css from '../../assets/img/css-3.svg';
-import sass from '../../assets/img/sass.svg';
-import js from '../../assets/img/javascript.svg';
-import react from '../../assets/img/react.svg';
-import redux from '../../assets/img/redux.svg';
-import node from '../../assets/img/node.svg';
-import express from '../../assets/img/express.svg';
-import postgresql from '../../assets/img/postgresql.svg';
-
-import './Skills.scss';
-
+import "./Skills.scss";
 
 const skillList = [
-    {name:"HTML", precent: '90%', icon1: html, icon2: null},
-    {name:"CSS & SASS", precent: '85%', icon1: css, icon2: sass},
-    {name:"JavaScript", precent: '75%', icon1: js, icon2: null},
-    {name:"React", precent: '65%', icon1: react, icon2: null},
-    {name:"Redux", precent: '55%', icon1: redux, icon2: null},
-    {name:"Node & Express", precent: '55%', icon1: node, icon2: express},
-    {name:"PostgreSQL", precent: '75%', icon1: postgresql, icon2: null},
+    {name:"HTML", precent: '90%', id1: 'html-5'},
+    {name:"CSS & SASS", precent: '85%', id1: 'css-3', id2: 'sass'},
+    {name:"JavaScript", precent: '75%', id1: 'javascript'},
+    {name:"React", precent: '65%', id1: 'react'},
+    {name:"Redux", precent: '55%', id1: 'redux'},
+    {name:"Node & Express", precent: '55%', id1: 'node', id2: 'express'},
+    {name:"PostgreSQL", precent: '75%', id1: 'postgresql'}
 ];
 
 const skills = () => (
@@ -33,10 +21,10 @@ const skills = () => (
             {skillList.map(skill => (
                 <SkillItem
                     key={skill.name}
-                    name={skill.name} 
+                    name={skill.name}
                     precent={skill.precent}
-                    icon1={skill.icon1} 
-                    icon2={skill.icon2}
+                    id1={skill.id1}
+                    id2={skill.id2}
                 />
             ))}
         </div>

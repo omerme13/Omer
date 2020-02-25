@@ -15,17 +15,16 @@
 
     &__text:link,
     &__text:visited {
-        font-size: 4rem;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
         text-decoration: none;
         color: inherit;
         transition: 0.3s;
 
         &:hover {
             color: $color-secondary;
-        }
-
-        @media only screen and (max-width: $bp-s) {
-            font-size: 2rem;
         }
     }
 

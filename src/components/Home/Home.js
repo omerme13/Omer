@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import Icon from '../UI/Icon/Icon';
-import omer from '../../assets/img/omer.PNG';
+import omer from '../../assets/img/omer.png';
 
 const home = () => (
     <header className="home" id="home">

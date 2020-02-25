@@ -34,7 +34,6 @@ const Projects = () => {
                     >
                         Front End
                     </a>
-                    <br /><br />
                     <a 
                         href="https://github.com/omerme13/burger-builder-server/"
                         className="modal__text"
