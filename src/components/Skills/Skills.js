@@ -7,11 +7,11 @@ const skillList = [
     {name:"HTML", precent: '90%', id1: 'html-5'},
     {name:"CSS & SASS", precent: '85%', id1: 'css-3', id2: 'sass'},
     {name:"JavaScript", precent: '80%', id1: 'javascript'},
-    {name:"React", precent: '75%', id1: 'react'},
+    {name:"React & React Native", precent: '75%', id1: 'react'},
     {name:"Redux", precent: '80%', id1: 'redux'},
     {name:"Node & Express", precent: '80%', id1: 'node', id2: 'express'},
     {name:"PostgreSQL", precent: '75%', id1: 'postgresql'},
-    {name:"MongoDB", precent: '75%', id1: 'mongodb'}
+    {name:"MongoDB & Mongoose", precent: '75%', id1: 'mongodb'}
 ];
 
 const skills = () => (
