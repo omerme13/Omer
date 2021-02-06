@@ -6,6 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import './SkillItem.scss';
 
 import icons from '../../../assets/img/sprite.svg';
+// import icons from '../../../assets/img/InlineSprite.svg';
 
 const skillItem = props => (
     <div className="skill-item">

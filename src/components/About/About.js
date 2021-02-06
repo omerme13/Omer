@@ -12,7 +12,7 @@ const about = () => (
             <Timeline />
             <div className="about__text">
                 <p className="about__paragraph">
-                    I am a freelance web developer and an Industrial Engineer that specialized in information systems.<br/>
+                    I am a full stack web developer with a year of professional experience.
                     When I was a student I have discovered the wonderful world of web development.
                     I explored, learned and worked in this field ever since. I am passionate about my line of work. 
                     For that reason I manage to learn and develope every day. 

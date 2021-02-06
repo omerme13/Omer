@@ -11,7 +11,11 @@ const skillList = [
     {name:"Redux", precent: '80%', id1: 'redux'},
     {name:"Node & Express", precent: '80%', id1: 'node', id2: 'express'},
     {name:"PostgreSQL", precent: '75%', id1: 'postgresql'},
-    {name:"MongoDB & Mongoose", precent: '75%', id1: 'mongodb'}
+    {name:"MongoDB & Mongoose", precent: '75%', id1: 'mongodb'},
+    {name:"Typescript", precent: '80%', id1: 'typescript'},
+    {name:"Graphql", precent: '50%', id1: 'graphql'},
+    {name:"Rxjs", precent: '50%', id1: 'reactivex'},
+    {name:"Material UI", precent: '80%', id1: 'material-ui'},
 ];
 
 const skills = () => (

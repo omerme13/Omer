@@ -24,15 +24,15 @@ const timeline = () => (
         </ul>
         <ul className="timeline__work">
             <TimelineItem 
-                year="2018 - NOW"
-                title="Web Developer"
-                place="Freelance"
+                year="2020 - 2021"
+                title="Full Stack Web Developer"
+                place="Webiks"
             />
             <TimelineItem 
-                year="2010 - 2018"
-                title="Production Planning & Control Manager"
-                place="Meishav B.M Ltd"
-            />    
+                year="2018 - 2019"
+                title="Full Stack Web Developer"
+                place="Freelance"
+            />
         </ul>
     </div>
 )
